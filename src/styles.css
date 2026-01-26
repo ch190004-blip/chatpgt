@@ -1,0 +1,110 @@
+:root {
+  color-scheme: light;
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  line-height: 1.6;
+  background-color: #f5f6fb;
+  color: #1b1d2a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2.5rem 8vw 1.5rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e4ef;
+}
+
+.app__eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: #6a6f85;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.app__header h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 2.4vw, 2.4rem);
+}
+
+.app__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.app__link {
+  text-decoration: none;
+  color: #1b1d2a;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  background: #f1f2f7;
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.app__link:hover {
+  background: #e1e5ff;
+}
+
+.app__link--active {
+  background: #2f3cff;
+  color: #ffffff;
+}
+
+.app__main {
+  flex: 1;
+  padding: 2rem 8vw 3rem;
+}
+
+.page {
+  max-width: 880px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.page h2 {
+  margin: 0;
+  font-size: clamp(1.4rem, 2vw, 1.9rem);
+}
+
+.page__grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  padding: 1.2rem 1.4rem;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 12px 24px rgba(15, 18, 45, 0.08);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.page__list {
+  padding-left: 1.2rem;
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+}
